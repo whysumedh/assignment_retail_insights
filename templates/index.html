@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">Retail Insights</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <label>Data Actions</label>
+                    <button id="getSummaryBtn" class="nav-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Dataset Summary
+                    </button>
+                    <button id="clearChatBtn" class="nav-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                        Clear History
+                    </button>
+                </div>
+
+                <div class="nav-group">
+                    <label>Quick Queries</label>
+                    <div class="suggestion-list">
+                        <button class="suggestion-btn" data-question="Which e-commerce site is relatively cheaper to buy kurtas?">Cheapest platform for kurtas?</button>
+                        <button class="suggestion-btn" data-question="What is the price range for products in the Moments catalog?">Price range: Moments</button>
+                        <button class="suggestion-btn" data-question="Show me the cheapest platform for style Os206_3141">Cheapest for Os206_3141</button>
+                        <button class="suggestion-btn" data-question="What are the most expensive products?">Highest priced items</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="dataset-info">
+                    <span class="status-dot"></span>
+                    <span>May 2022 Dataset</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="header-content">
+                    <h1>Analysis Assistant</h1>
+                    <div class="status-badge">Connected</div>
+                </div>
+            </header>
+
+            <div id="chatMessages" class="messages-container">
+                <div class="welcome-hero">
+                    <div class="hero-icon">🔎</div>
+                    <h1>How can I help with your retail data?</h1>
+                    <p>Ask about platform pricing, product categories, or market trends.</p>
+                </div>
+            </div>
+
+            <footer class="input-area">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="questionInput" 
+                        placeholder="Ask a question about pricing..."
+                        autocomplete="off"
+                    >
+                    <button id="sendBtn" class="send-action" aria-label="Send message">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div id="loadingOverlay" class="global-loader" style="display: none;">
+        <div class="loader-box">
+            <div class="spin"></div>
+            <span>Analyzing Data...</span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
