@@ -1,6 +1,7 @@
 # Retail Insights Assistant
 
 An AI-powered web application that answers questions about retail pricing data using Google Gemini AI. Provides interactive chat interface and data insights for e-commerce platform pricing analysis.
+Used Dataset : [Dataset](https://wgcp-my.sharepoint.com/:x:/r/personal/ritish_jogi_blend360_com/_layouts/15/Doc.aspx?sourcedoc=%7BBCD48020-E3F6-4FA8-9722-1A904E731DB1%7D&file=May-2022.csv&action=default&mobileredirect=true)
 
 ## Overview
 
