@@ -15,7 +15,8 @@ A Flask-based web application that uses Google Gemini AI to analyze and answer q
 - **Data Analysis**: Automatic data cleaning, summary statistics generation
 - **API Endpoints**: RESTful API for programmatic access
 - **Real-time Query Processing**: Context-aware responses with relevant product information
-
+<img width="1885" height="944" alt="image" src="https://github.com/user-attachments/assets/ffd81911-b0c7-4cfb-93b5-b243b29b4c35" />
+<img width="1035" height="707" alt="image" src="https://github.com/user-attachments/assets/4a0d2275-5bd2-43a9-b338-0f432415e580" />
 ---
 
 ## Quick Start
