@@ -2,11 +2,12 @@
 
 An AI-powered web application that answers questions about retail pricing data using Google Gemini AI. Provides interactive chat interface and data insights for e-commerce platform pricing analysis.
 
----
-
 ## Overview
 
 A Flask-based web application that uses Google Gemini AI to analyze and answer questions about retail pricing data across multiple e-commerce platforms (Ajio, Amazon, Flipkart, Myntra, etc.).
+
+<img width="1885" height="944" alt="image" src="https://github.com/user-attachments/assets/ffd81911-b0c7-4cfb-93b5-b243b29b4c35" />
+<img width="1035" height="707" alt="image" src="https://github.com/user-attachments/assets/4a0d2275-5bd2-43a9-b338-0f432415e580" />
 
 ### Features
 
@@ -15,16 +16,13 @@ A Flask-based web application that uses Google Gemini AI to analyze and answer q
 - **Data Analysis**: Automatic data cleaning, summary statistics generation
 - **API Endpoints**: RESTful API for programmatic access
 - **Real-time Query Processing**: Context-aware responses with relevant product information
-<img width="1885" height="944" alt="image" src="https://github.com/user-attachments/assets/ffd81911-b0c7-4cfb-93b5-b243b29b4c35" />
-<img width="1035" height="707" alt="image" src="https://github.com/user-attachments/assets/4a0d2275-5bd2-43a9-b338-0f432415e580" />
----
 
 ## Quick Start
 
 ### Prerequisites
 
 - Python 3.8+
-- Google Gemini API Key ([Get API Key](https://aistudio.google.com/app/apikey))
+- Google Gemini API Key 
 
 ### Installation
 
